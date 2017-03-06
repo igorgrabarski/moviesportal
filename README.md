@@ -1,2 +1,1 @@
-# moviesportal
-Fetch and parse your lovely movies info
+### Movies Portal Engine
