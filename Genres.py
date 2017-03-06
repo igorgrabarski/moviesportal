@@ -3,7 +3,9 @@ import json
 
 
 class Genres:
-    API_KEY = '1d6024f272ab343b950270c96503e08f'
+    file = open('API_KEY')
+    API_KEY = file.read()
+    file.close()
     LANGUAGE = 'en-US'
     GENRES_URL = 'https://api.themoviedb.org/3/genre/movie/list?api_key=' + \
                  API_KEY + '&language=' + LANGUAGE
