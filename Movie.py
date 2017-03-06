@@ -7,7 +7,9 @@ from Service import Service
 
 
 class Movie:
-    API_KEY = '1d6024f272ab343b950270c96503e08f'
+    file = open('API_KEY')
+    API_KEY = file.read()
+    file.close()
     LANGUAGE = 'en-US'
     INITIAL_PREFIX = 'https://api.themoviedb.org/3/'
 
