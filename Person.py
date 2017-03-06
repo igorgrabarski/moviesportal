@@ -3,7 +3,9 @@ import urllib2
 
 
 class Person:
-    API_KEY = '1d6024f272ab343b950270c96503e08f'
+    file = open('API_KEY')
+    API_KEY = file.read()
+    file.close()
     LANGUAGE = '&language=en-US'
     PERSON_PREFIX = 'https://api.themoviedb.org/3/person/'
     PERSON_MIDDLE = '?api_key='
