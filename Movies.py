@@ -7,8 +7,11 @@ from Service import Service
 
 
 class Movies:
+    ######################################
     # Please enter your API KEY below:
-    API_KEY = '1d6024f272ab343b950270c96503e08f'
+    API_KEY = ''
+    ######################################
+    
     LANGUAGE = 'en-US'
     INITIAL_PREFIX = 'https://api.themoviedb.org/3/'
     MOVIE_PREFIX = 'movie/'
